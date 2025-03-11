@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BrainBreeze</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="header">Stay Sharp, Stay Refreshed!</div>
+  <div id="background-container"></div>
+  <div class="quiz-container">
+    <h1>Quiz Time!</h1>
+    
+    <div id="quiz-content">
+      <div id="category-selection">
+        <label for="category">Choose a category:</label>
+        <select id="category">
+          <option value="9">General Knowledge</option>
+          <option value="22">Geography</option>
+          <option value="21">Sports</option>
+          <option value="20">History</option>
+        </select>
+        <div id="difficulty-selection">
+          <label for="difficulty">Choose difficulty:</label>
+          <select id="difficulty">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+          </select>
+        </div>
+      </div>
+      <div id="timer">
+        Time : <span id="time">--</span>s
+        <span class="tooltip">ⓘ
+          <span class="tooltiptext">Time per question depends on the selected difficulty level.</span>
+        </span>
+      </div>
+      <div id="progress-container">
+        <div id="progress-bar">
+          <div id="progress"></div>
+        </div>
+        <div id="question-count">Question : <span id="current-question">0</span>/<span id="total-questions">0</span></div>
+      </div>
+      <div id="timer-warning" class="hide">Hurry up! Time is running out!</div>
+      <div id="question-container" class="hide">
+        <div id="question"></div>
+        <div id="answer-buttons" class="btn-grid"></div>
+      </div>
+      <div class="controls">
+        <button id="start-btn" class="start-btn">Start Quiz</button>
+        <div id="controls-container" class="hide">
+          <button id="pause-btn" class="btn hide">Pause</button>
+          <button id="next-btn" class="btn">Next</button>
+        </div>
+        <button id="restart-btn" class="restart-btn btn hide">Restart</button>
+        <button id="play-again-btn" class="play-again-btn btn hide">Play Again</button>
+        <button id="quit-btn" class="quit-btn btn hide">Quit</button>
+      </div>
+      <div id="result" class="result hide">
+        Your score: <span id="final-score"></span>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
