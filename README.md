@@ -11,6 +11,6 @@ BrainBreeze is a dynamic quiz website that lets users test their knowledge acros
 ✅ Responsive Design – Optimized for mobile and desktop.
 
 🚀 *Technologies Used*: 
-Frontend: HTML, CSS, JavaScript. 
-API Integration: Open Trivia Database API (for fetching questions). 
-Animations & Effects: CSS animations for smooth transitions.
+~ Frontend: HTML, CSS, JavaScript. 
+~ API Integration: Open Trivia Database API (for fetching questions). 
+~ Animations & Effects: CSS animations for smooth transitions.
